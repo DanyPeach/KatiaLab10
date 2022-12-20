@@ -47,7 +47,6 @@ public class CatalogPage extends AbstractPage {
     }
 
     public String checkCartStatus(){
-
         return cartStatus.getText();
     }
 

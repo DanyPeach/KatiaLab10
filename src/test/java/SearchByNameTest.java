@@ -28,7 +28,7 @@ public class SearchByNameTest {
         catalogPage.putProductInCart().closePopUp().checkCart();
         String result = catalogPage.checkCartStatus();
 
-        Assert.assertEquals(result, EMPTY_CART);
+        Assert.assertTrue(EMPTY_CART.contains(result));
     }
 
     @AfterTest
