@@ -26,9 +26,8 @@ public class CatalogPage extends AbstractPage {
         super(webDriver);
     }
 
-    public String getTextFromTitle() throws InterruptedException {
-        Thread.sleep(5000);
-        return catalogTitle.getText();
+    public String getTextFromTitle() {
+        return driver.getCurrentUrl();
     }
 
     public CatalogPage putProductInCart(){
@@ -48,6 +47,7 @@ public class CatalogPage extends AbstractPage {
     }
 
     public String checkCartStatus(){
+
         return cartStatus.getText();
     }
 
